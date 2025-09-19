@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .absoluto{
+            position: absolute;
+            top: 100px;
+            left: 60px;
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+        }
+        .relativo{
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+        }
+        .imagem{
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+        .imagem:hover{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="absoluto">
+        conteúdo absoluto
+    </div>
+     <div class="relativo">
+        conteúdo relativo
+    </div>
+    <p>
+        The element is positioned according to the Normal Flow of the document. 
+        The top, right, bottom, left, and z-index properties have no effect. This is the default value.
+    </p>
+        <img class="imagem" src="https://uploads.jovemnerd.com.br/wp-content/uploads/2022/12/animes_mais_aguardados_do_ano__2o6g5y62m.jpg">
+    <p> 
+        The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, 
+        right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the 
+        page layout is the same as if position were static.
+    </p> 
+    <p>
+        The element is removed from the normal document flow, and no space is created for the element in the page layout. 
+        The element is positioned relative to its closest positioned ancestor (if any) or to the initial containing block. 
+        Its final position is determined by the values of top, right, bottom, and left.
+    </p>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox</title>
+        <style>
+            .container{
+                display:flex;
+            }
+            
+            .caixas{
+                display: flex;
+            }
+
+            .item1{
+                border: 10px;
+                width: 30%;
+                height: 10%;
+                text-align: center;
+                background-color: blue;
+                flex-grow: 3;
+            }
+            .item2{
+                border: 10px;
+                width: 30%;
+                height: 10%;
+                text-align: center;
+                background-color: green;
+                flex-grow: 3;
+            }
+            .item3{
+                border: 10px;
+                width: 30%;
+                height: 10%;
+                text-align: center;
+                background-color: red;
+                flex-grow: 3;
+            }
+
+
+            .menu{
+                width:30%;
+            }
+
+            header, footer{
+                height: 100px;
+                background-color: aqua;
+            }
+
+            section{
+                background-color: darkgray;
+            }
+
+            main{
+                background-color: cadetblue;
+                flex-grow: 1;
+            }
+
+            header, div, footer, section, main{
+                border: 1px solid #000
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            Cabeçalho da página
+        </header>
+        <div class="container">
+            <section class="menu">Menu lateral</section>
+            <main>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit esse nisi quae dolore distinctio, fugit accusantium aliquam harum eveniet veniam molestias consectetur odit, laboriosam recusandae, numquam cum? Ex, unde?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus quisquam quas mollitia nobis ducimus porro ad voluptatem maxime placeat itaque dolorem sunt, eveniet libero quidem natus laudantium, vel excepturi.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, velit reiciendis animi nulla maiores enim sequi, laudantium expedita at labore commodi beatae deleniti vel eius error earum obcaecati harum eligendi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi nulla sapiente magnam. Iste ex aliquam soluta quas ab saepe rerum sit repudiandae sint? Nisi veniam itaque quas natus adipisci corrupti.</p> 
+            </main>
+        </div>
+        <footer>Rodapé da pagina</footer>
+        <div class="caixas">
+            <div class="item1">Caixa</div>
+            <div class="item2">Caixa</div>
+            <div class="item3">Caixa</div>
+        </div>
+    </body>
+</html>
