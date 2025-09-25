@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body * {
+            border:1px solid #000;
+        }
+        .container {
+            display: flex;
+        }
+        .container > section:not(:first-child) {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .container > section:first-child {
+            width: 50%;
+        }
+        .container > section:first-child>section:last-child{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .container > section:first-child>section:last-child>div{
+            width: 32%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <!--1--><section>Noticia Principal</section>
+            <!--2--><section>Noticias secundarias</section>
+            <!--3--><section>
+                <div>Notícia qualquer</div>
+                <div>Notícia qualquer</div>
+                <div>Notícia qualquer</div>
+                <div>Notícia qualquer</div>
+                <div>Notícia qualquer</div>
+                <div>Notícia qualquer</div>
+                <div>Notícia qualquer</div>
+            </section>
+        </section>
+        <section>
+            <div class="noticia">
+                ALGUMA NOTICIA 1
+            </div>
+            <div class="noticia">
+                ALGUMA NOTICIA 2
+            </div>
+            <div class="noticia">
+                ALGUMA NOTICIA 3
+            </div>
+            <div class="noticia">
+                ALGUMA NOTICIA 4
+            </div>
+            <div class="noticia">
+                ALGUMA NOTICIA 5
+            </div>
+            <div class="noticia">
+                ALGUMA NOTICIA 6
+            </div>
+        </section>
+        <section>
+            <div class="noticia">
+                ALGUMA NOTICIA 1
+            </div>
+            <div class="noticia">
+                ALGUMA NOTICIA 2
+            </div>
+            <div class="noticia">
+                ALGUMA NOTICIA 3
+            </div>
+            <div class="noticia">
+                ALGUMA NOTICIA 4
+            </div>
+            <div class="noticia">
+                ALGUMA NOTICIA 5
+            </div>
+            <div class="noticia">
+                ALGUMA NOTICIA 6
+            </div>
+        </section>
+    </div>
+</body>
+</html>
