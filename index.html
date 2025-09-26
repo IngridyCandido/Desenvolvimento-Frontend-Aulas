@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox26092025</title>
+    <style>
+        body * {
+            border: 1px solid #000;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        #ladinho {
+            justify-content: space-around;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container>div>section:last-child {
+            display: flex;
+        }
+
+        .container>div:last-child>section {
+            width: 90%;
+        }
+
+        .container>div:first-child {
+            width: 66%;
+        }
+
+        .container>div:not(:first-child) {
+            width: 33%;
+            justify-content: space-between;
+        }
+
+        .container>div>section:nth-child(2) {
+            display: flex;
+        }
+
+        .container>div>section>div {
+            width: 32%;
+        }
+
+        .container>div>section {
+            justify-content: space-between;
+        }
+
+        .container>div>section>section {
+            width: 24%;
+        }
+
+        #parteFlex {
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <section>PARTE Principal</section>
+            <section>
+                <div>
+                    <section>Noticia qualquer 1</section>
+                    <section>Noticia qualquer 2</section>
+                    <section>Noticia qualquer 3</section>
+                </div>
+                <div>
+                    <section>Noticia qualquer 1</section>
+                    <section>Noticia qualquer 2</section>
+                    <section>Noticia qualquer 3</section>
+                </div>
+                <div>
+                    <section>Noticia qualquer 1</section>
+                    <section>Noticia qualquer 2</section>
+                    <section>Noticia qualquer 3</section>
+                </div>
+            </section>
+            <section id="parteFlex">
+                <section>Noticia qualquer 1</section>
+                <section>Noticia qualquer 2</section>
+                <section>Noticia qualquer 3</section>
+                <section>Noticia qualquer 4</section>
+                <section>Noticia qualquer 5</section>
+                <section>Noticia qualquer 6</section>
+                <section>Noticia qualquer 7</section>
+                <section>Noticia qualquer 8</section>
+                <section>Noticia qualquer 9</section>
+            </section>
+        </div>
+        <div id="ladinho">
+            <section>NOTICIA QUALQUER 1</section>
+            <section>NOTICIA QUALQUER 2</section>
+            <section>NOTICIA QUALQUER 3</section>
+        </div>
+    </div>
+</body>
+
+</html>
