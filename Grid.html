@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body{
+            border: 1px solid #000;
+        }
+        .container{
+            display: grid;
+            grid-template-areas:
+            "principal principal lateral1"
+            "principal principal lateral2"
+            "not1 not2 not3"
+            "not4 not5 not6";
+            grid-template-columns: 2fr 1 fr 1fr;
+            grid-template-rows: 100px 100px 50px 50px;
+        }
+        .principal{
+            grid-area: principal;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="principal">principal</div>
+        <div class="lateral1">lateral 1</div>
+        <div class="lateral2">lateral 2</div>
+        <div class="not1">notícia 1</div>
+        <div class="not2">notícia 2</div>
+        <div class="not3">notícia 3</div>
+        <div class="not4">notícia 4</div>
+        <div class="not5">notícia 5</div>
+        <div class="not6">notícia 6</div>
+    </section>
+</body>
+</html>
